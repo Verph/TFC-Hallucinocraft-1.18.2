@@ -1,0 +1,29 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "age=0": {
+      "model": "hallucinocraft:block/crop/hemp_age_0"
+    },
+    "age=1": {
+      "model": "hallucinocraft:block/crop/hemp_age_1"
+    },
+    "age=2,part=bottom": {
+      "model": "hallucinocraft:block/crop/hemp_age_2_bottom"
+    },
+    "age=3,part=bottom": {
+      "model": "hallucinocraft:block/crop/hemp_age_3_bottom"
+    },
+    "age=4,part=bottom": {
+      "model": "hallucinocraft:block/crop/hemp_age_4_bottom"
+    },
+    "age=2,part=top": {
+      "model": "hallucinocraft:block/crop/hemp_age_2_top"
+    },
+    "age=3,part=top": {
+      "model": "hallucinocraft:block/crop/hemp_age_3_top"
+    },
+    "age=4,part=top": {
+      "model": "hallucinocraft:block/crop/hemp_age_4_top"
+    }
+  }
+}

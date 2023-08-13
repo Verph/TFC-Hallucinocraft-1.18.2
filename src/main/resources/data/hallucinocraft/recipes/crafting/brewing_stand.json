@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    " B ",
+    "###"
+  ],
+  "key": {
+    "T": {
+      "tag": "tfc:tuyeres"
+    },
+    "B": {
+      "tag": "forge:rods"
+    },
+    "#": {
+      "tag": "forge:smooth_stone"
+    }
+  },
+  "result": {
+    "item": "minecraft:brewing_stand"
+  }
+}

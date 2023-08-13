@@ -1,0 +1,13 @@
+{
+  "ingredient": {
+    "item": "tfcflorae:food/dragonberry"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:cannabis",
+      "delayTime": 1000,
+      "potency": 0.1,
+      "duration": 5000
+    }
+  ]
+}

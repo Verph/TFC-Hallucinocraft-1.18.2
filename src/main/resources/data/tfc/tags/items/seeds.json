@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:seeds/agave",
+    "hallucinocraft:seeds/coca",
+    "hallucinocraft:seeds/coffea",
+    "hallucinocraft:seeds/cotton",
+    "hallucinocraft:seeds/flax",
+    "hallucinocraft:seeds/hemp",
+    "hallucinocraft:seeds/hop",
+    "hallucinocraft:seeds/indigo",
+    "hallucinocraft:seeds/madder",
+    "hallucinocraft:seeds/peyote",
+    "hallucinocraft:seeds/tobacco",
+    "hallucinocraft:seeds/weld",
+    "hallucinocraft:seeds/woad"
+  ]
+}

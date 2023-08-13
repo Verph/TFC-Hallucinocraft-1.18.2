@@ -1,0 +1,20 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "D",
+    "P"
+  ],
+  "key": {
+    "D": {
+      "item": "hallucinocraft:dried_tobacco_bud"
+    },
+    "P": {
+      "item": "hallucinocraft:dried_tobacco_leaf"
+    }
+  },
+  "result": {
+    "item": "hallucinocraft:tobacco_cigar"
+  }
+}

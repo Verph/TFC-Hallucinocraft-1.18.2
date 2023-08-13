@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:seeds/agave",
+    "#forge:seeds/coca",
+    "#forge:seeds/coffea",
+    "#forge:seeds/coffee",
+    "#forge:seeds/cotton",
+    "#forge:seeds/flax",
+    "#forge:seeds/hemp",
+    "#forge:seeds/hop",
+    "#forge:seeds/indigo",
+    "#forge:seeds/madder",
+    "#forge:seeds/peyote",
+    "#forge:seeds/tobacco",
+    "#forge:seeds/weld",
+    "#forge:seeds/woad"
+  ]
+}

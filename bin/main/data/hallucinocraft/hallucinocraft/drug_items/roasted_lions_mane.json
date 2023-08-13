@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_lions_mane"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:morphine",
+      "delayTime": 600,
+      "potency": 0.15,
+      "duration": 2000
+    }
+  ]
+}

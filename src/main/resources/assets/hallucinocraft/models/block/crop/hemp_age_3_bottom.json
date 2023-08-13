@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "hallucinocraft:block/crop_tall_lower",
+  "textures": {
+    "crop": "hallucinocraft:block/crop/hemp_3"
+  }
+}

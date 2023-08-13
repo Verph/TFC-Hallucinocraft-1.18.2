@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_boletus"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:cocaine",
+      "delayTime": 1000,
+      "potency": 0.1,
+      "duration": 5000
+    }
+  ]
+}

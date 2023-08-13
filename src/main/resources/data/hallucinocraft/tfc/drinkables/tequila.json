@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "hallucinocraft:tequila",
+  "thirst": 10,
+  "intoxication": 4000,
+  "drugs": [
+    {
+      "type": "hallucinocraft:soul_rester",
+      "delayTime": 1200,
+      "potency": 0.5,
+      "duration": 7500
+    }
+  ]
+}

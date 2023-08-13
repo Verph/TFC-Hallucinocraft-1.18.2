@@ -1,0 +1,21 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:agave",
+    "hallucinocraft:madder",
+    "hallucinocraft:indigo",
+    "hallucinocraft:weld",
+    "hallucinocraft:woad",
+    "hallucinocraft:hop",
+    "hallucinocraft:peyote",
+    "hallucinocraft:cannabis_leaf",
+    "hallucinocraft:coca_leaf",
+    "hallucinocraft:tobacco_leaf",
+    "hallucinocraft:cannabis_bud",
+    "hallucinocraft:tobacco_bud",
+    "hallucinocraft:coffea",
+    "hallucinocraft:dried_coffea",
+    "hallucinocraft:roasted_coffee"
+  ]
+}

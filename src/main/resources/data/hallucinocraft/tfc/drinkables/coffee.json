@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "hallucinocraft:coffee",
+  "thirst": 15,
+  "food": {
+    "hunger": 0.1,
+    "saturation": 0.1
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:caffeine",
+      "delayTime": 200,
+      "potency": 0.6,
+      "duration": 5000
+    }
+  ]
+}

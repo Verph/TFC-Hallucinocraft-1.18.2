@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:loom",
+  "ingredient": {
+    "item": "hallucinocraft:hemp_fiber"
+  },
+  "input_count": 12,
+  "result": {
+    "item": "hallucinocraft:hemp_fabric"
+  },
+  "steps_required": 12,
+  "in_progress_texture": "hallucinocraft:block/hemp_fabric"
+}

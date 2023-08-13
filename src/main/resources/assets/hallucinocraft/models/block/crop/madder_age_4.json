@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "hallucinocraft:block/crop_tall",
+  "textures": {
+    "crop": "hallucinocraft:block/crop/madder_4"
+  }
+}

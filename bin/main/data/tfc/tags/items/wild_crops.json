@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:wild_crop/agave",
+    "hallucinocraft:wild_crop/coca",
+    "hallucinocraft:wild_crop/coffea",
+    "hallucinocraft:wild_crop/cotton",
+    "hallucinocraft:wild_crop/flax",
+    "hallucinocraft:wild_crop/hemp",
+    "hallucinocraft:wild_crop/hop",
+    "hallucinocraft:wild_crop/indigo",
+    "hallucinocraft:wild_crop/madder",
+    "hallucinocraft:wild_crop/tobacco",
+    "hallucinocraft:wild_crop/weld",
+    "hallucinocraft:wild_crop/woad",
+    "hallucinocraft:wild_crop/peyote"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:hemp",
+    "hallucinocraft:flax",
+    "hallucinocraft:cotton",
+    "hallucinocraft:dried_brown_mushroom",
+    "hallucinocraft:dried_red_mushroom",
+	"#forge:seeds"
+  ]
+}

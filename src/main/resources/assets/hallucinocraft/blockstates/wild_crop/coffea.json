@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "part=top": {
+      "model": "hallucinocraft:block/wild_crop/coffea_top"
+    },
+    "part=bottom": {
+      "model": "hallucinocraft:block/wild_crop/coffea_bottom"
+    }
+  }
+}

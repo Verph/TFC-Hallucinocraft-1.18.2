@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "hallucinocraft:dried_red_shrooms"
+    },
+    {
+      "tag": "hallucinocraft:dried_red_shrooms"
+    },
+    {
+      "tag": "hallucinocraft:dried_red_shrooms"
+    },
+    {
+      "tag": "hallucinocraft:dried_red_shrooms"
+    }
+  ],
+  "result": {
+    "item": "hallucinocraft:red_shrooms",
+    "count": 4
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "tfcflorae:red_shroom"
+    },
+    {
+      "tag": "tfcflorae:brown_shroom"
+    },
+    {
+      "item": "tfcflorae:food/dragonberry"
+    },
+    {
+      "tag": "forge:crops/nether_wart"
+    }
+  ],
+  "result": {
+    "item": "hallucinocraft:soul_concentrate",
+      "count": 4
+  }
+}

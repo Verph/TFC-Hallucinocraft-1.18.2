@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "hallucinocraft:block/large_cross",
+  "textures": {
+    "crop": "hallucinocraft:block/crop/agave_5"
+  }
+}

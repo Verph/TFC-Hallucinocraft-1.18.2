@@ -1,0 +1,39 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic_condenser",
+		"y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic_condenser"
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic_condenser",
+		"y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic_condenser",
+		"y": 270
+      }
+    }
+  ]
+}

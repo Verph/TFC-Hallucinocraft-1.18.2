@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hallucinocraft:cocaine_dust"
+    },
+    {
+      "item": "hallucinocraft:cocaine_dust"
+    },
+    {
+      "item": "hallucinocraft:cocaine_dust"
+    },
+    {
+      "item": "hallucinocraft:cocaine_dust"
+    }
+  ],
+  "result": {
+    "item": "hallucinocraft:cocaine_powder",
+      "count": 4
+  }
+}

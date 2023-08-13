@@ -1,0 +1,47 @@
+modLoader="javafml"
+loaderVersion="${loader_range}"
+license="MIT"
+
+[[mods]]
+modId = "hallucinocraft"
+version = "${file.jarVersion}"
+displayName = "Hallucinocraft"
+authors = "DaDerpDuck, Verph"
+description = '''
+Adds drugs into Minecraft and compat for TFC.
+'''
+
+[[dependencies.hallucinocraft]]
+	modId = "tfcflorae"
+	mandatory = true
+	versionRange = "[1,)"
+	side = "BOTH"
+	ordering = "AFTER"
+
+[[dependencies.hallucinocraft]]
+	modId = "firmalife"
+	mandatory = true
+	versionRange = "[1,)"
+	side = "BOTH"
+	ordering = "AFTER"
+
+[[dependencies.hallucinocraft]]
+	modId = "tfc"
+	mandatory = true
+	versionRange = "[1.18.2-2.1.18,)"
+	side = "BOTH"
+	ordering = "AFTER"
+
+[[dependencies.hallucinocraft]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "${forge_range}"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.hallucinocraft]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "${mc_range}"
+    ordering = "NONE"
+    side = "BOTH"

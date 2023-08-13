@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_birch_polypore"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:soul_rester",
+      "delayTime": 1000,
+      "potency": 0.2,
+      "duration": 5000
+    }
+  ]
+}

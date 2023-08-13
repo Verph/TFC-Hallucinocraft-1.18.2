@@ -1,0 +1,18 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "hallucinocraft:roasted_coffee"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:spring_water",
+    "amount": 500
+  },
+  "output_fluid": {
+    "fluid": "hallucinocraft:coffee",
+    "amount": 500
+  },
+  "duration": 500
+}

@@ -1,0 +1,26 @@
+{
+  "targets": [
+    "swap"
+  ],
+  "passes": [
+    {
+      "name": "hallucinocraft:glitch",
+      "intarget": "minecraft:main",
+      "outtarget": "swap"
+    },
+    {
+      "name": "hallucinocraft:glitch2",
+      "intarget": "swap",
+      "outtarget": "minecraft:main",
+      "auxtargets": [
+        {
+          "name": "NoiseSampler",
+          "id": "hallucinocraft:noise",
+          "width": 96,
+          "height": 96,
+          "bilinear": true
+        }
+      ]
+    }
+  ]
+}

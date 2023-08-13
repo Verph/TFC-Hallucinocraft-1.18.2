@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "mature=false": {
+      "model": "hallucinocraft:block/dead_crop/coca_young"
+    },
+    "mature=true,part=top": {
+      "model": "hallucinocraft:block/dead_crop/coca_top"
+    },
+    "mature=true,part=bottom": {
+      "model": "hallucinocraft:block/dead_crop/coca_bottom"
+    }
+  }
+}

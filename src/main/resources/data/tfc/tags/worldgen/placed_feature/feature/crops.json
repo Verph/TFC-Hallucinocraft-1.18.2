@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "tfc:plant/wild_crop/agave_patch",
+    "tfc:plant/wild_crop/coca_patch",
+    "tfc:plant/wild_crop/coffea_patch",
+    "tfc:plant/wild_crop/cotton_patch",
+    "tfc:plant/wild_crop/flax_patch",
+    "tfc:plant/wild_crop/hemp_patch",
+    "tfc:plant/wild_crop/hop_patch",
+    "tfc:plant/wild_crop/indigo_patch",
+    "tfc:plant/wild_crop/madder_patch",
+    "tfc:plant/wild_crop/peyote_patch",
+    "tfc:plant/wild_crop/tobacco_patch",
+    "tfc:plant/wild_crop/weld_patch",
+    "tfc:plant/wild_crop/woad_patch"
+  ]
+}

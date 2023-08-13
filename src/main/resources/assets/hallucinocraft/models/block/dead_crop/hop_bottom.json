@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "hallucinocraft:block/crop_cross_lower",
+  "textures": {
+    "crop": "hallucinocraft:block/crop/hop_dead"
+  }
+}

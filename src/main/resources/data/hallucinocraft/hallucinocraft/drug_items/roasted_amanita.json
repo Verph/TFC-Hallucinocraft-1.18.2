@@ -1,0 +1,13 @@
+{
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_amanita"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:soul_wrencher",
+      "delayTime": 800,
+      "potency": 0.5,
+      "duration": 5000
+    }
+  ]
+}

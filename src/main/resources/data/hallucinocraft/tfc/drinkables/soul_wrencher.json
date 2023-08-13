@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "hallucinocraft:soul_wrencher",
+  "thirst": -20,
+  "intoxication": 4000,
+  "drugs": [
+    {
+      "type": "hallucinocraft:soul_wrencher",
+      "delayTime": 400,
+      "potency": 0.8,
+      "duration": 8000
+    }
+  ]
+}

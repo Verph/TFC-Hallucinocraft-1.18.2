@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "hallucinocraft:dirty_sisal_net"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "minecraft:water",
+    "amount": 125
+  },
+  "output_item": {
+    "item": "hallucinocraft:sisal_net"
+  },
+  "duration": 1000
+}

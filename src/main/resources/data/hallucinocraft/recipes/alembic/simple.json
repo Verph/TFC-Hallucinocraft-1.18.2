@@ -1,0 +1,14 @@
+{
+  "type": "hallucinocraft:distillation",
+  "input_fluid": {
+    "ingredient": {
+      "tag": "tfc:vodka"
+    },
+    "amount": 9
+  },
+  "output_fluid": {
+    "fluid": "hallucinocraft:tequila",
+    "amount": 10
+  },
+  "duration": 1
+}

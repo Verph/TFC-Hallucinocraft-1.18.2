@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:loom",
+  "ingredient": {
+    "item": "hallucinocraft:sisal_fiber"
+  },
+  "input_count": 12,
+  "result": {
+    "item": "hallucinocraft:sisal_fabric"
+  },
+  "steps_required": 12,
+  "in_progress_texture": "hallucinocraft:block/sisal_fabric"
+}

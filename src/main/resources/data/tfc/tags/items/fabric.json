@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "#tfc:high_quality_cloth",
+    "hallucinocraft:linen_fabric",
+    "hallucinocraft:hemp_fabric",
+    "hallucinocraft:sisal_fabric",
+    "tfc:burlap_cloth"
+  ]
+}

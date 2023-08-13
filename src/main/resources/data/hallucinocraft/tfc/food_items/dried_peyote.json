@@ -1,0 +1,10 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "hallucinocraft:dried_peyote"
+  },
+  "hunger": 4,
+  "saturation": 2,
+  "decay_modifier": 0.7,
+  "fruit": 1
+}

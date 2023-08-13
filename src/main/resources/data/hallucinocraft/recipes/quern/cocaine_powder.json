@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:quern",
+  "ingredient": {
+    "item": "hallucinocraft:cocaine_rock"
+  },
+  "result": {
+    "item": "hallucinocraft:cocaine_powder",
+    "count": 1
+  }
+}

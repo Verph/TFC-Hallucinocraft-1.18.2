@@ -1,0 +1,9 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "hallucinocraft:wort",
+  "thirst": 10,
+  "food": {
+    "hunger": 0.1,
+    "saturation": 0.1
+  }
+}

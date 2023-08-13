@@ -1,0 +1,13 @@
+{
+  "ingredient": {
+    "item": "tfcflorae:food/eucalyptus_leaves"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:nicotine",
+      "delayTime": 1000,
+      "potency": 0.1,
+      "duration": 5000
+    }
+  ]
+}

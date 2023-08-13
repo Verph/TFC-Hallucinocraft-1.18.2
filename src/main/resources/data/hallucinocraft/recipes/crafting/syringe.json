@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC"
+  ],
+  "key": {
+    "A": {
+      "tag": "tfc:tuyeres"
+    },
+    "B": {
+      "tag": "forge:glass"
+    },
+    "C": {
+      "tag": "forge:rods"
+    }
+  },
+  "result": {
+    "item": "hallucinocraft:syringe",
+      "count": 4
+  }
+}

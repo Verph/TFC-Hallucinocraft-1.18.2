@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "hallucinocraft:soul_rester",
+  "thirst": 0,
+  "intoxication": 2000,
+  "drugs": [
+    {
+      "type": "hallucinocraft:soul_rester",
+      "delayTime": 400,
+      "potency": 0.8,
+      "duration": 8000
+    }
+  ]
+}

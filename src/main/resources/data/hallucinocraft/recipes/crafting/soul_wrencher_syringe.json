@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "hallucinocraft:soul_wrencher",
+        "amount": 100
+      }
+    },
+    {
+      "item": "hallucinocraft:syringe"
+    }
+  ],
+  "result": {
+    "item": "hallucinocraft:soul_wrencher_syringe"
+  }
+}

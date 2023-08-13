@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_turkey_tail"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:red_shrooms",
+      "delayTime": 1000,
+      "potency": 0.1,
+      "duration": 2000
+    }
+  ]
+}

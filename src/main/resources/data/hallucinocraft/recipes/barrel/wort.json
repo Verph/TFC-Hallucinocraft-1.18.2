@@ -1,0 +1,21 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+		"tag": "tfc:foods/grains"
+      }
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:spring_water",
+    "amount": 500
+  },
+  "output_fluid": {
+    "fluid": "hallucinocraft:wort",
+    "amount": 500
+  },
+  "duration": 5000
+}

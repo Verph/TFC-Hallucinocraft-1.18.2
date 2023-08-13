@@ -1,0 +1,28 @@
+{
+  "minVersion": "0.8",
+  "required": true,
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "hallucinocraft.refmap.json",
+  "package": "com.daderpduck.hallucinocraft.mixin",
+  "mixins": [
+    "MixinLivingEntity",
+    "MixinDrinkable",
+    "MixinTFCFoodData"
+  ],
+  "client": [
+    "client.AccessorShaderGroup",
+    "client.InvokerConfigOF",
+    "client.MixinBufferUploader",
+    "client.MixinChannel",
+    "client.MixinGameRenderer",
+    "client.MixinLevelRenderer",
+    "client.MixinRubidiumWorldRenderer",
+    "client.MixinLibrary",
+    "client.MixinMouseHandler",
+    "client.MixinSoundEngine"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "plugin": "com.daderpduck.hallucinocraft.mixin.ModCompatMixinPlugin"
+}

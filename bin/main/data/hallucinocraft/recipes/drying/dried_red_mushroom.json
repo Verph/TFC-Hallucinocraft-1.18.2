@@ -1,0 +1,10 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "firmalife:drying",
+  "ingredient": {
+    "tag": "tfcflorae:red_shroom"
+  },
+  "result": {
+    "item": "hallucinocraft:dried_red_mushroom"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:dried_peyote",
+    "hallucinocraft:dried_cannabis_leaf",
+    "hallucinocraft:dried_cannabis_bud",
+    "hallucinocraft:dried_tobacco_leaf",
+    "hallucinocraft:dried_tobacco_bud",
+    "hallucinocraft:coca_mulch",
+    "hallucinocraft:brown_shrooms",
+    "hallucinocraft:red_shrooms"
+  ]
+}

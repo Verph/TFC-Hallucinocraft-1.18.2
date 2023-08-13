@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_chlorophos_foxfire"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:brown_shrooms",
+      "delayTime": 800,
+      "potency": 0.2,
+      "duration": 3000
+    }
+  ]
+}

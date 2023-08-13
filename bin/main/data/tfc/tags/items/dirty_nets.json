@@ -1,0 +1,10 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:dirty_linen_net",
+    "hallucinocraft:dirty_hemp_net",
+    "hallucinocraft:dirty_sisal_net",
+    "tfc:dirty_jute_net"
+  ]
+}

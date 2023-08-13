@@ -1,0 +1,19 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:heating",
+  "ingredient": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "hallucinocraft:unbrewed_coca_tea",
+        "amount": 100
+      }
+  },
+  "result_item": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": "hallucinocraft:coca_tea",
+        "amount": 100
+      }
+  },
+  "temperature": 150
+}

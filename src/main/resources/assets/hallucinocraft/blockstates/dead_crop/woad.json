@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "mature=true": {
+      "model": "hallucinocraft:block/dead_crop/woad"
+    },
+    "mature=false": {
+      "model": "hallucinocraft:block/dead_crop/woad_young"
+    }
+  }
+}

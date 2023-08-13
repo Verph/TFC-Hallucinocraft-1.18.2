@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "hallucinocraft:opium_bottle_3"
+  },
+  "result_item": {
+    "item": "hallucinocraft:morphine_bottle"
+  },
+  "temperature": 200
+}

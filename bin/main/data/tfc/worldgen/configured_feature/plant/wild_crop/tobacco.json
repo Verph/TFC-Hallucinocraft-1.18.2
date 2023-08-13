@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "hallucinocraft:tall_wild_crop",
+  "config": {
+    "block": "hallucinocraft:wild_crop/tobacco"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hallucinocraft:item/peyote_joint"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "minecraft:damage": 0.0
+      },
+      "model": "hallucinocraft:item/peyote_joint"
+    },
+    {
+      "predicate": {
+        "minecraft:damage": 1.0
+      },
+      "model": "hallucinocraft:item/peyote_joint_using"
+    }
+  ]
+}

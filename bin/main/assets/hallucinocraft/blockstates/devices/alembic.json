@@ -1,0 +1,78 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic",
+		"y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic"
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic",
+		"y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/alembic",
+		"y": 270
+      }
+    },
+    {
+      "when": {
+        "facing_tube": "east",
+		"connected": "true"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/tube",
+		"y": 180
+      }
+    },
+    {
+      "when": {
+        "facing_tube": "north",
+		"connected": "true"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/tube",
+		"y": 90
+      }
+    },
+    {
+      "when": {
+        "facing_tube": "south",
+		"connected": "true"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/tube",
+		"y": 270
+      }
+    },
+    {
+      "when": {
+        "facing_tube": "west",
+		"connected": "true"
+      },
+      "apply": {
+        "model": "hallucinocraft:block/devices/tube"
+      }
+    }
+  ]
+}

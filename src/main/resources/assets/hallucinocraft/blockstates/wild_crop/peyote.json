@@ -1,0 +1,23 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "variants": {
+    "": [
+	  {
+        "model": "hallucinocraft:block/crop/peyote_age_0",
+		"weight": 2
+	  },
+	  {
+        "model": "hallucinocraft:block/crop/peyote_age_1",
+		"weight": 3
+	  },
+	  {
+        "model": "hallucinocraft:block/crop/peyote_age_2",
+		"weight": 2
+	  },
+	  {
+        "model": "hallucinocraft:block/crop/peyote_age_3",
+		"weight": 1
+	  }
+    ]
+  }
+}

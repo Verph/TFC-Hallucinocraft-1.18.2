@@ -1,0 +1,21 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "hallucinocraft:coca_leaf"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:spring_water",
+    "amount": 500
+  },
+  "output_item": {
+    "item": "hallucinocraft:coca_mulch"
+  },
+  "output_fluid": {
+    "fluid": "hallucinocraft:unbrewed_coca_tea",
+    "amount": 500
+  },
+  "duration": 1250
+}

@@ -1,0 +1,32 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BEB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "type": "tfc:fluid_item",
+      "fluid_ingredient": {
+        "ingredient": {
+          "tag": "tfc:milks"
+        },
+        "amount": 100
+      }
+    },
+    "B": {
+      "item": "hallucinocraft:cocaine_powder"
+    },
+    "E": {
+      "tag": "forge:eggs"
+    },
+    "C": {
+      "tag": "tfc:foods/grains"
+    }
+  },
+  "result": {
+    "item": "hallucinocraft:coke_cake"
+  }
+}

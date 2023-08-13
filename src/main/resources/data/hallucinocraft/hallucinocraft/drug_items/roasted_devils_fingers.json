@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_devils_fingers"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:morphine",
+      "delayTime": 1200,
+      "potency": 0.4,
+      "duration": 5000
+    }
+  ]
+}

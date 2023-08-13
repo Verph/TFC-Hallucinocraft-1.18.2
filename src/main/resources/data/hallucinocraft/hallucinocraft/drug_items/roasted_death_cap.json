@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_death_cap"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:soul_wrencher",
+      "delayTime": 800,
+      "potency": 0.5,
+      "duration": 5000
+    }
+  ]
+}

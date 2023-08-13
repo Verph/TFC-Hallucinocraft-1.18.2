@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "hallucinocraft:dried_coffea"
+  },
+  "result_item": {
+    "item": "hallucinocraft:roasted_coffee"
+  },
+  "temperature": 125
+}

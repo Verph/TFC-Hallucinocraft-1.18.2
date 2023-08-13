@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "tfcflorae:food/roasted_indigo_milk_cap"
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:peyote",
+      "delayTime": 700,
+      "potency": 0.2,
+      "duration": 2500
+    }
+  ]
+}

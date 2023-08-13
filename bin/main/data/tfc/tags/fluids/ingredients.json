@@ -1,0 +1,13 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:unbrewed_cannabis_tea",
+    "hallucinocraft:unbrewed_coca_tea",
+    "hallucinocraft:morphine",
+    "hallucinocraft:soul_rester",
+    "hallucinocraft:soul_wrencher",
+    "hallucinocraft:wort",
+    "tfc:spring_water"
+  ]
+}

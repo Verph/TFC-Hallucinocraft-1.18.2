@@ -1,0 +1,33 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hallucinocraft:item/cannabis_cigar"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "minecraft:damage": 0.0
+      },
+      "model": "hallucinocraft:item/cigar_0"
+    },
+    {
+      "predicate": {
+        "minecraft:damage": 0.33
+      },
+      "model": "hallucinocraft:item/cigar_1"
+    },
+    {
+      "predicate": {
+        "minecraft:damage": 0.66
+      },
+      "model": "hallucinocraft:item/cigar_2"
+    },
+    {
+      "predicate": {
+        "minecraft:damage": 1.0
+      },
+      "model": "hallucinocraft:item/cigar_3"
+    }
+  ]
+}

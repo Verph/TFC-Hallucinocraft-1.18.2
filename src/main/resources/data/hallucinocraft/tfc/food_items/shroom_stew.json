@@ -1,0 +1,11 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": {
+    "item": "hallucinocraft:agave"
+  },
+  "hunger": 7,
+  "saturation": 4,
+  "decay_modifier": 3.4,
+  "protein": 4,
+  "vegetables": 4
+}

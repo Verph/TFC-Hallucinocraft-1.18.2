@@ -1,0 +1,21 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hallucinocraft:item/cigarette"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "minecraft:damage": 0.0
+      },
+      "model": "hallucinocraft:item/cigarette_0"
+    },
+    {
+      "predicate": {
+        "minecraft:damage": 1.0
+      },
+      "model": "hallucinocraft:item/cigarette_using"
+    }
+  ]
+}

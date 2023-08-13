@@ -1,0 +1,18 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "hallucinocraft:cannabis_tea",
+  "thirst": 5,
+  "intoxication": 100,
+  "food": {
+    "hunger": 0.1,
+    "saturation": 0.1
+  },
+  "drugs": [
+    {
+      "type": "hallucinocraft:cannabis",
+      "delayTime": 800,
+      "potency": 0.4,
+      "duration": 5000
+    }
+  ]
+}

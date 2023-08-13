@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": "hallucinocraft:morphine",
+  "thirst": -5,
+  "intoxication": 7000,
+  "drugs": [
+    {
+      "type": "hallucinocraft:morphine",
+      "delayTime": 400,
+      "potency": 0.8,
+      "duration": 4000
+    }
+  ]
+}

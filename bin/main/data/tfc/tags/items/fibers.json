@@ -1,0 +1,10 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": false,
+  "values": [
+    "hallucinocraft:flax_fiber",
+    "hallucinocraft:hemp_fiber",
+    "hallucinocraft:sisal_fiber",
+    "tfc:jute_fiber"
+  ]
+}

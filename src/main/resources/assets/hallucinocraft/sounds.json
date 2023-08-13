@@ -1,0 +1,163 @@
+{
+  "ambience.soul_wrencher.additions": {
+    "sounds": [
+      "hallucinocraft:ambience/soul_wrencher/pop1",
+      "hallucinocraft:ambience/soul_wrencher/pop2",
+      "hallucinocraft:ambience/soul_wrencher/pop3",
+      "hallucinocraft:ambience/soul_wrencher/pop4",
+      "hallucinocraft:ambience/soul_wrencher/pop5",
+      "hallucinocraft:ambience/soul_wrencher/mic1",
+      "hallucinocraft:ambience/soul_wrencher/mic2",
+      "hallucinocraft:ambience/soul_wrencher/mic3",
+      "hallucinocraft:ambience/soul_wrencher/mic4",
+      "hallucinocraft:ambience/soul_wrencher/mic5",
+      "hallucinocraft:ambience/soul_wrencher/mic6",
+      "hallucinocraft:ambience/soul_wrencher/mic7",
+      "hallucinocraft:ambience/soul_wrencher/mic8"
+    ]
+  },
+  "ambience.soul_wrencher.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/soul_wrencher/hum",
+        "stream": true,
+        "volume": 0.3
+      }
+    ]
+  },
+  "ambience.red_shroom.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/red_shroom/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.brown_shroom.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/brown_shroom/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.peyote.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/peyote/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.cannabis.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/cannabis/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.cocaine.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/cocaine/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.tobacco.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/tobacco/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.morphine.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/morphine/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.opium.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/opium/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.caffeine.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/caffeine/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.glitch.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/glitch/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.lsd.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/lsd/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.dmt.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/dmt/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.nicotine.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/nicotine/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "ambience.soul_rester.loop": {
+    "sounds": [
+      {
+        "name": "hallucinocraft:ambience/soul_rester/music",
+        "stream": true,
+        "volume": 0.4
+      }
+    ]
+  },
+  "item.bong.hit": {
+    "subtitle": "subtitles.item.bong.hit",
+    "sounds": [
+      "hallucinocraft:item/bong/hit1",
+      "hallucinocraft:item/bong/hit2",
+      "hallucinocraft:item/bong/hit3",
+      "hallucinocraft:item/bong/hit4"
+    ]
+  }
+}
