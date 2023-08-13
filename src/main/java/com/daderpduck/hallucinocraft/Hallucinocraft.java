@@ -35,6 +35,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.registries.IForgeRegistry;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -72,16 +73,15 @@ public class Hallucinocraft
 
         drugSupplier = Drugs.DRUGS.makeRegistry(Drug.class, Drugs::getRegistryBuilder);
 
-        ModItems.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModContainerTypes.CONTAINERS.register(modEventBus);
         ModFluids.FLUIDS.register(modEventBus);
-        ModSounds.register(modEventBus);
+        ModSounds.SOUNDS.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
-        //ModBlockEntities.register(modEventBus);
         ModRecipes.RECIPE_TYPES.register(modEventBus);
         ModRecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
-        Drugs.register(modEventBus);
+        Drugs.DRUGS.register(modEventBus);
         ForgeEventHandler.init();
         HCFeatures.FEATURES.register(modEventBus);
 

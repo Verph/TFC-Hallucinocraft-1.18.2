@@ -263,6 +263,5 @@ public class ModItems
     public static void register(IEventBus modBus)
     {
         ITEMS.register(modBus);
-        modBus.register(ModItems.class);
     }
 }
