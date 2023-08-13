@@ -10,7 +10,7 @@ import net.dries007.tfc.util.calendar.ICalendarTickable;
 
 import com.daderpduck.hallucinocraft.blocks.crop.HCDoubleCropBlock;
 
-public class HCCropBlockEntity extends CropBlockEntity implements ICalendarTickable
+public class HCCropBlockEntity extends CropBlockEntity
 {
     public HCCropBlockEntity(BlockPos pos, BlockState state)
     {

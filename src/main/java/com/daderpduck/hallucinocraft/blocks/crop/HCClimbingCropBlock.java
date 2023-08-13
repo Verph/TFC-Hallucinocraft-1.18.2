@@ -38,7 +38,7 @@ public abstract class HCClimbingCropBlock extends HCDoubleCropBlock implements I
     public static HCClimbingCropBlock create(ExtendedProperties properties, int singleStages, int doubleStages, HCCrop crop, Supplier<? extends Item> productItem)
     {
         final IntegerProperty property = HCBlockStateProperties.getAgeProperty(singleStages + doubleStages - 1);
-        return new HCClimbingCropBlock(properties, singleStages - 1, singleStages + doubleStages - 1, ModBlocks.DEAD_CROPS.get(crop), ModItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), HCClimateRanges.CROPS.get(crop), productItem)
+        return new HCClimbingCropBlock(properties, singleStages - 1, singleStages + doubleStages - 1, ModBlocks.DEAD_CROPS.get(crop), ModItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), HCClimateRanges.CROPS.get(crop), productItem, crop)
         {
             @Override
             public IntegerProperty getAgeProperty()
@@ -48,9 +48,9 @@ public abstract class HCClimbingCropBlock extends HCDoubleCropBlock implements I
         };
     }
 
-    protected HCClimbingCropBlock(ExtendedProperties properties, int maxSingleAge, int maxAge, Supplier<? extends Block> dead, Supplier<? extends Item> seeds, FarmlandBlockEntity.NutrientType primaryNutrient, Supplier<ClimateRange> climateRange, Supplier<? extends Item> productItem)
+    protected HCClimbingCropBlock(ExtendedProperties properties, int maxSingleAge, int maxAge, Supplier<? extends Block> dead, Supplier<? extends Item> seeds, FarmlandBlockEntity.NutrientType primaryNutrient, Supplier<ClimateRange> climateRange, Supplier<? extends Item> productItem, HCCrop crop)
     {
-        super(properties, maxSingleAge, maxAge, dead, seeds, primaryNutrient, climateRange, productItem);
+        super(properties, maxSingleAge, maxAge, dead, seeds, primaryNutrient, climateRange, productItem, crop);
         registerDefaultState(getStateDefinition().any().setValue(STICK, false).setValue(HC_PART, Part.BOTTOM));
     }
 

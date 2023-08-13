@@ -71,11 +71,6 @@ public abstract class HCDefaultCropBlock extends CropBlock
         registerDefaultState(defaultBlockState().setValue(getAgeProperty(), 0));
     }
 
-    public int getMaxAgeForDrop()
-    {
-        return getMaxAge() - 1;
-    }
-
     @Override
     protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos)
     {
@@ -105,7 +100,7 @@ public abstract class HCDefaultCropBlock extends CropBlock
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit)
     {
         super.use(state, level, pos, player, hand, hit);
-        if (state.getValue(getAgeProperty()) == getMaxAgeForDrop() && productItem != null)
+        if (state.getValue(getAgeProperty()) == getMaxAge() && productItem != null)
         {
             level.playSound(player, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.PLAYERS, 1.0f, level.getRandom().nextFloat() + 0.7f + 0.3f);
             if (!level.isClientSide())
@@ -116,14 +111,14 @@ public abstract class HCDefaultCropBlock extends CropBlock
                 final BlockPos posBelow = pos.below();
                 final BlockState stateBelow = level.getBlockState(posBelow);
 
-                int ageAfterPicking = (int) Mth.clamp((getMaxAgeForDrop() * 0.7F) - 1, 0, getMaxAgeForDrop());
+                int ageAfterPicking = Mth.clamp(Math.round((getMaxAge() * 0.7F)) - 1, 0, getMaxAge());
 
                 level.setBlockAndUpdate(pos, level.getBlockState(pos).setValue(getAgeProperty(), ageAfterPicking));
-                if (stateAbove.getBlock() == this)
+                if (stateAbove.getBlock() == ModBlocks.CROPS.get(crop).get())
                 {
                     level.setBlockAndUpdate(posAbove, level.getBlockState(posAbove).setValue(getAgeProperty(), ageAfterPicking));
                 }
-                else if (stateBelow.getBlock() == this)
+                else if (stateBelow.getBlock() == ModBlocks.CROPS.get(crop).get())
                 {
                     level.setBlockAndUpdate(posBelow, level.getBlockState(posBelow).setValue(getAgeProperty(), ageAfterPicking));
                 }

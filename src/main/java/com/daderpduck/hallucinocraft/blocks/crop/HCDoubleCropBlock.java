@@ -55,7 +55,7 @@ public abstract class HCDoubleCropBlock extends CropBlock
     public static HCDoubleCropBlock create(ExtendedProperties properties, int singleStages, int doubleStages, HCCrop crop, Supplier<? extends Item> productItem)
     {
         final IntegerProperty property = HCBlockStateProperties.getAgeProperty(singleStages + doubleStages - 1);
-        return new HCDoubleCropBlock(properties, singleStages - 1, singleStages + doubleStages - 1, ModBlocks.DEAD_CROPS.get(crop), ModItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), HCClimateRanges.CROPS.get(crop), productItem)
+        return new HCDoubleCropBlock(properties, singleStages - 1, singleStages + doubleStages - 1, ModBlocks.DEAD_CROPS.get(crop), ModItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), HCClimateRanges.CROPS.get(crop), productItem, crop)
         {
             @Override
             public IntegerProperty getAgeProperty()
@@ -65,23 +65,20 @@ public abstract class HCDoubleCropBlock extends CropBlock
         };
     }
 
-    protected final int maxSingleAge;
-    protected final float maxSingleGrowth;
-    protected final Supplier<? extends Item> productItem;
+    public final HCCrop crop;
+    public final int maxSingleAge;
+    public final float maxSingleGrowth;
+    public final Supplier<? extends Item> productItem;
 
-    protected HCDoubleCropBlock(ExtendedProperties properties, int maxSingleAge, int maxAge, Supplier<? extends Block> dead, Supplier<? extends Item> seeds, FarmlandBlockEntity.NutrientType primaryNutrient, Supplier<ClimateRange> climateRange, Supplier<? extends Item> productItem)
+    protected HCDoubleCropBlock(ExtendedProperties properties, int maxSingleAge, int maxAge, Supplier<? extends Block> dead, Supplier<? extends Item> seeds, FarmlandBlockEntity.NutrientType primaryNutrient, Supplier<ClimateRange> climateRange, Supplier<? extends Item> productItem, HCCrop crop)
     {
         super(properties, maxAge, dead, seeds, primaryNutrient, climateRange);
 
         this.maxSingleAge = maxSingleAge;
         this.maxSingleGrowth = (float) maxSingleAge / maxAge;
         this.productItem = productItem;
+        this.crop = crop;
         registerDefaultState(defaultBlockState().setValue(getAgeProperty(), 0).setValue(HC_PART, Part.BOTTOM));
-    }
-
-    public int getMaxAgeForDrop()
-    {
-        return getMaxAge() - 1;
     }
 
     @Override
@@ -226,7 +223,7 @@ public abstract class HCDoubleCropBlock extends CropBlock
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit)
     {
         super.use(state, level, pos, player, hand, hit);
-        if (state.getValue(getAgeProperty()) == getMaxAgeForDrop() && productItem != null)
+        if (state.getValue(getAgeProperty()) == getMaxAge() && productItem != null)
         {
             level.playSound(player, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.PLAYERS, 1.0f, level.getRandom().nextFloat() + 0.7f + 0.3f);
             if (!level.isClientSide())
@@ -237,14 +234,14 @@ public abstract class HCDoubleCropBlock extends CropBlock
                 final BlockPos posBelow = pos.below();
                 final BlockState stateBelow = level.getBlockState(posBelow);
 
-                int ageAfterPicking = (int) Mth.clamp((getMaxAgeForDrop() * 0.7F) - 1, 0, getMaxAgeForDrop());
+                int ageAfterPicking = Mth.clamp(Math.round((getMaxAge() * 0.7F)) - 1, 0, getMaxAge());
 
                 level.setBlockAndUpdate(pos, level.getBlockState(pos).setValue(getAgeProperty(), ageAfterPicking));
-                if (stateAbove.getBlock() == this)
+                if (stateAbove.getBlock() == ModBlocks.CROPS.get(crop).get())
                 {
                     level.setBlockAndUpdate(posAbove, level.getBlockState(posAbove).setValue(getAgeProperty(), ageAfterPicking));
                 }
-                else if (stateBelow.getBlock() == this)
+                else if (stateBelow.getBlock() == ModBlocks.CROPS.get(crop).get())
                 {
                     level.setBlockAndUpdate(posBelow, level.getBlockState(posBelow).setValue(getAgeProperty(), ageAfterPicking));
                 }
