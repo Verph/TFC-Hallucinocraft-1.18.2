@@ -124,7 +124,7 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     implementation fg.deobf("tfc:TerraFirmaCraft-Forge-${minecraft_version2}:${tfc_version}")
     implementation fg.deobf("tfcflorae:TFCFlorae-${minecraft_version2}:${tfcflorae_version}")
-    implementation fg.deobf("rubidium:rubidium:0.5.4")
+    implementation fg.deobf("rubidium:rubidium:${rubidium_version}")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
