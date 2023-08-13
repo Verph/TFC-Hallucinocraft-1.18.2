@@ -32,10 +32,6 @@ public class ModItems
 {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Hallucinocraft.MOD_ID);
 
-    public static final Map<HCCrop, RegistryObject<Item>> CROP_SEEDS = Helpers.mapOfKeys(HCCrop.class, crop ->
-        registerItem("seeds/" + crop.name(), () -> new ItemNameBlockItem(ModBlocks.CROPS.get(crop).get(), new Item.Properties().tab(Hallucinocraft.TAB)))
-    );
-    
     public static final RegistryObject<Item> HOP = registerItem("hop", () -> new Item(new Item.Properties().food(ModFoods.GENERIC).tab(Hallucinocraft.TAB)));
     public static final RegistryObject<Item> INDIGO = registerItem("indigo");
     public static final RegistryObject<Item> MADDER = registerItem("madder");
@@ -138,6 +134,10 @@ public class ModItems
 
     public static final Map<HCAlcohol, RegistryObject<BucketItem>> ALCOHOL_FLUID_BUCKETS = Helpers.mapOfKeys(HCAlcohol.class, fluid ->
         registerItem("bucket/" + fluid.name(), () -> new BucketItem(ModFluids.ALCOHOLS.get(fluid).source(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(Hallucinocraft.TAB)))
+    );
+
+    public static final Map<HCCrop, RegistryObject<Item>> CROP_SEEDS = Helpers.mapOfKeys(HCCrop.class, crop ->
+        registerItem("seeds/" + crop.name(), () -> new ItemNameBlockItem(ModBlocks.CROPS.get(crop).get(), new Item.Properties().tab(Hallucinocraft.TAB)))
     );
 
     private static RegistryObject<DrugItem> registerDrug(String name, DrugChain drugChain)
