@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 import java.util.function.Supplier;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -225,34 +226,56 @@ public abstract class HCDoubleCropBlock extends CropBlock
         super.use(state, level, pos, player, hand, hit);
         if (state.getValue(getAgeProperty()) == getMaxAge() && productItem != null)
         {
-            level.playSound(player, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.PLAYERS, 1.0f, level.getRandom().nextFloat() + 0.7f + 0.3f);
-            if (!level.isClientSide() && level.getBlockEntity(pos) instanceof CropBlockEntity cropEntity)
+            level.playSound(player, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.PLAYERS, 1.0f, level.getRandom().nextFloat() + 1f);
+            if (!level.isClientSide())
             {
-                ItemHandlerHelper.giveItemToPlayer(player, getProductItem(level.getRandom(), Mth.floor(cropEntity.getYield())));
+                ItemHandlerHelper.giveItemToPlayer(player, getProductItem(level.getRandom()));
 
                 final BlockPos posAbove = pos.above();
                 final BlockState stateAbove = level.getBlockState(posAbove);
                 final BlockPos posBelow = pos.below();
                 final BlockState stateBelow = level.getBlockState(posBelow);
 
+                //int ageAfterPicking = Mth.clamp(Math.round((getMaxAge() * 0.7f)) - 1, 0, getMaxAge());
                 int ageAfterPicking = Mth.clamp(state.getValue(getAgeProperty()) - 2, 0, getMaxAge());
-                cropEntity.setGrowth(ageAfterPicking / getMaxAge());
 
-                level.setBlockAndUpdate(pos, level.getBlockState(pos).setValue(getAgeProperty(), ageAfterPicking));
+                BlockPos posBottom = null;
+                BlockPos posTop = null;
+
                 if (stateAbove.getBlock() == ModBlocks.CROPS.get(crop).get())
                 {
-                    level.setBlockAndUpdate(posAbove, level.getBlockState(posAbove).setValue(getAgeProperty(), ageAfterPicking));
-                    if (level.getBlockEntity(posAbove) instanceof CropBlockEntity cropAbove)
-                    {
-                        cropAbove.setGrowth(ageAfterPicking / getMaxAge());
-                    }
+                    //We must be the bottom block
+                    posBottom = pos;
+
+                    //And other must be top
+                    posTop = posAbove;
                 }
                 else if (stateBelow.getBlock() == ModBlocks.CROPS.get(crop).get())
                 {
-                    level.setBlockAndUpdate(posBelow, level.getBlockState(posBelow).setValue(getAgeProperty(), ageAfterPicking));
-                    if (level.getBlockEntity(posBelow) instanceof CropBlockEntity cropBelow)
+                    //We must be the top block
+                    posTop = pos;
+
+                    //And other must be bottom
+                    posBottom = posBelow;
+                }
+                else
+                {
+                    //We must be the bottom block, and have no top block, random ticking will handle growth.
+                    posBottom = pos;
+                }
+                final CropBlockEntity blockEntity = (CropBlockEntity) level.getBlockEntity(posBottom);
+                blockEntity.setGrowth(ageAfterPicking / getMaxAge());
+
+                level.setBlockAndUpdate(posBottom, level.getBlockState(posBottom).setValue(getAgeProperty(), ageAfterPicking));
+                if (posTop != null)
+                {
+                    if (ageAfterPicking <= maxSingleAge)
                     {
-                        cropBelow.setGrowth(ageAfterPicking / getMaxAge());
+                        level.setBlock(posTop, Blocks.AIR.defaultBlockState(), Block.UPDATE_ALL, 0);
+                    }
+                    else
+                    {
+                        level.setBlockAndUpdate(posTop, level.getBlockState(posTop).setValue(getAgeProperty(), ageAfterPicking));
                     }
                 }
             }
@@ -261,9 +284,9 @@ public abstract class HCDoubleCropBlock extends CropBlock
         return InteractionResult.PASS;
     }
 
-    public ItemStack getProductItem(Random random, int cropYield)
+    public ItemStack getProductItem(Random random)
     {
-        return new ItemStack(productItem.get(), random.nextInt(HallucinocraftConfig.COMMON.additionalCropDrops.get()) + cropYield);
+        return new ItemStack(productItem.get(), random.nextInt(HallucinocraftConfig.COMMON.additionalCropDrops.get()) + 1);
     }
 
     @Override

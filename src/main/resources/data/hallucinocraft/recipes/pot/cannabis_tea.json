@@ -1,0 +1,22 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "hallucinocraft:dried_cannabis_leaf"
+    },
+    {
+      "item": "hallucinocraft:dried_cannabis_leaf"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 500
+  },
+  "duration": 1300,
+  "temperature": 300,
+  "fluid_output": {
+    "fluid": "hallucinocraft:cannabis_tea",
+    "amount": 500
+  }
+}
