@@ -65,8 +65,6 @@ public class Hallucinocraft
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        //ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, HallucinocraftConfig.serverSpec);
-        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, HallucinocraftConfig.commonSpec);
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, HallucinocraftConfig.clientSpec);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, HallucinocraftConfig.commonSpec);
         modEventBus.register(HallucinocraftConfig.class);
@@ -131,22 +129,9 @@ public class Hallucinocraft
         }
     }
 
-    private void enqueueIMC(final InterModEnqueueEvent event)
-    {
-        // some example code to dispatch IMC to another mod
-        /*InterModComms.sendTo("hallucinocraft", "helloworld", () -> {
-            LOGGER.info("Hello world from the MDK");
-            return "Hello world";
-        });*/
-    }
+    private void enqueueIMC(final InterModEnqueueEvent event) {}
 
-    private void processIMC(final InterModProcessEvent event)
-    {
-        // some example code to receive and process InterModComms from other mods
-        /*LOGGER.info("Got IMC {}", event.getIMCStream().
-                map(m -> m.getMessageSupplier().get()).
-                collect(Collectors.toList()));*/
-    }
+    private void processIMC(final InterModProcessEvent event) {}
 
     @SubscribeEvent
     public void onRegisterCommands(RegisterCommandsEvent event)

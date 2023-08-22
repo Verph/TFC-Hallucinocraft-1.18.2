@@ -264,7 +264,7 @@ public abstract class HCDoubleCropBlock extends CropBlock
                     posBottom = pos;
                 }
                 final CropBlockEntity blockEntity = (CropBlockEntity) level.getBlockEntity(posBottom);
-                blockEntity.setGrowth(ageAfterPicking / getMaxAge());
+                blockEntity.setGrowth((float) ageAfterPicking / getMaxAge());
 
                 level.setBlockAndUpdate(posBottom, level.getBlockState(posBottom).setValue(getAgeProperty(), ageAfterPicking));
                 if (posTop != null)

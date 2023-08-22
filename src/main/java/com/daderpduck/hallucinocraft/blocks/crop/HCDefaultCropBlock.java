@@ -108,7 +108,7 @@ public abstract class HCDefaultCropBlock extends CropBlock
                 ItemHandlerHelper.giveItemToPlayer(player, getProductItem(level.getRandom(), Mth.floor(cropEntity.getYield())));
 
                 int ageAfterPicking = Mth.clamp(state.getValue(getAgeProperty()) - 2, 0, getMaxAge());
-                cropEntity.setGrowth(ageAfterPicking / getMaxAge());
+                cropEntity.setGrowth((float) ageAfterPicking / getMaxAge());
 
                 level.setBlockAndUpdate(pos, level.getBlockState(pos).setValue(getAgeProperty(), ageAfterPicking));
             }
