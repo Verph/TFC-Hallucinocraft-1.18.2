@@ -227,9 +227,9 @@ public abstract class HCDoubleCropBlock extends CropBlock
         if (state.getValue(getAgeProperty()) == getMaxAge() && productItem != null)
         {
             level.playSound(player, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.PLAYERS, 1.0f, level.getRandom().nextFloat() + 1f);
-            if (!level.isClientSide())
+            if (!level.isClientSide() && level.getBlockEntity(pos) instanceof CropBlockEntity cropEntity)
             {
-                ItemHandlerHelper.giveItemToPlayer(player, getProductItem(level.getRandom()));
+                ItemHandlerHelper.giveItemToPlayer(player, getProductItem(level.getRandom(), cropEntity.getYield()));
 
                 final BlockPos posAbove = pos.above();
                 final BlockState stateAbove = level.getBlockState(posAbove);
@@ -284,9 +284,9 @@ public abstract class HCDoubleCropBlock extends CropBlock
         return InteractionResult.PASS;
     }
 
-    public ItemStack getProductItem(Random random)
+    public ItemStack getProductItem(Random random, float cropYield)
     {
-        return new ItemStack(productItem.get(), random.nextInt(HallucinocraftConfig.COMMON.additionalCropDrops.get()) + 1);
+        return new ItemStack(productItem.get(), Math.round(random.nextInt(HallucinocraftConfig.COMMON.additionalCropDrops.get()) * (1 + cropYield)));
     }
 
     @Override

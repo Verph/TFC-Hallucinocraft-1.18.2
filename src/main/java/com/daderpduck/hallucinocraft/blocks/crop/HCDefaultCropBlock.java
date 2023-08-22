@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.function.Supplier;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
@@ -16,9 +17,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.items.ItemHandlerHelper;
 
@@ -29,6 +34,7 @@ import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.crop.CropBlock;
 import net.dries007.tfc.util.Helpers;
 import net.dries007.tfc.util.climate.ClimateRange;
+import net.dries007.tfc.util.loot.CropYieldProvider;
 
 import com.daderpduck.hallucinocraft.HallucinocraftConfig;
 import com.daderpduck.hallucinocraft.blocks.HCBlockStateProperties;
@@ -105,7 +111,7 @@ public abstract class HCDefaultCropBlock extends CropBlock
             level.playSound(player, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.PLAYERS, 1.0f, level.getRandom().nextFloat() + 0.7f + 0.3f);
             if (!level.isClientSide() && level.getBlockEntity(pos) instanceof CropBlockEntity cropEntity)
             {
-                ItemHandlerHelper.giveItemToPlayer(player, getProductItem(level.getRandom(), Mth.floor(cropEntity.getYield())));
+                ItemHandlerHelper.giveItemToPlayer(player, getProductItem(level.getRandom(), cropEntity.getYield()));
 
                 int ageAfterPicking = Mth.clamp(state.getValue(getAgeProperty()) - 2, 0, getMaxAge());
                 cropEntity.setGrowth((float) ageAfterPicking / getMaxAge());
@@ -117,9 +123,9 @@ public abstract class HCDefaultCropBlock extends CropBlock
         return InteractionResult.PASS;
     }
 
-    public ItemStack getProductItem(Random random, int cropYield)
+    public ItemStack getProductItem(Random random, float cropYield)
     {
-        return new ItemStack(productItem.get(), random.nextInt(HallucinocraftConfig.COMMON.additionalCropDrops.get()) + cropYield);
+        return new ItemStack(productItem.get(), Math.round(random.nextInt(HallucinocraftConfig.COMMON.additionalCropDrops.get()) * (1 + cropYield)));
     }
 
     @Override
