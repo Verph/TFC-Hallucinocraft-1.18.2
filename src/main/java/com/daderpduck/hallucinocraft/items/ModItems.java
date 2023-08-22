@@ -82,7 +82,6 @@ public class ModItems
     public static final RegistryObject<DrugItem> COCAINE_DUST = registerDrug("cocaine_dust", new DrugChain().add(Drugs.COCAINE, 100, 0.05F, 1000), UseAnim.BOW, 64);
     public static final RegistryObject<DrugItem> COCAINE_POWDER = registerDrug("cocaine_powder", new DrugChain().add(Drugs.COCAINE, 100, 0.3F, 3200), UseAnim.BOW, 64);
     public static final RegistryObject<DrugItem> COCAINE_ROCK = registerDrug("cocaine_rock", new DrugChain().add(Drugs.COCAINE, 200, 0.1F, 4000), UseAnim.BOW, 64);
-    public static final RegistryObject<Item> COKE_CAKE = registerBlock("coke_cake", ModBlocks.COKE_CAKE_BLOCK, 1);
     public static final RegistryObject<DrugBottleItem> UNBREWED_COCA_TEA = registerItem("unbrewed_coca_tea", () -> new DrugBottleItem(new DrugItem.Properties().addDrug(Drugs.COCAINE, 800, 0.01F, 1200).food(ModFoods.CANNABIS_TEA).stacksTo(16).tab(Hallucinocraft.TAB)));
     public static final RegistryObject<DrugBottleItem> COCA_TEA = registerItem("coca_tea", () -> new DrugBottleItem(new DrugItem.Properties().addDrug(Drugs.COCAINE, 800, 0.1F, 3200).food(ModFoods.CANNABIS_TEA).stacksTo(16).tab(Hallucinocraft.TAB)));
     //public static final RegistryObject<Item> COCA_JUG = registerItem("ceramic/jug/coca", () -> new JugItem(new DrugItem.Properties().addDrug(Drugs.COCAINE, 0, 0.6F, 5000).tab(Hallucinocraft.TAB).stacksTo(1), TFCConfig.SERVER.jugCapacity, ModTags.Fluids.COCA_TEA));
@@ -127,6 +126,7 @@ public class ModItems
 
     public static final RegistryObject<Item> AIRLOCK = registerItem("airlock");
     public static final RegistryObject<Item> FERMENTING_BOTTLE = registerBlock("fermenting_bottle", ModBlocks.FERMENTING_BOTTLE_BLOCK);
+    public static final RegistryObject<Item> COKE_CAKE = registerBlock("coke_cake", ModBlocks.COKE_CAKE_BLOCK, 1);
 
     public static final Map<HCSimpleFluid, RegistryObject<BucketItem>> SIMPLE_FLUID_BUCKETS = Helpers.mapOfKeys(HCSimpleFluid.class, fluid ->
         registerItem("bucket/" + fluid.name(), () -> new BucketItem(ModFluids.SIMPLE_FLUIDS.get(fluid).source(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(Hallucinocraft.TAB)))
